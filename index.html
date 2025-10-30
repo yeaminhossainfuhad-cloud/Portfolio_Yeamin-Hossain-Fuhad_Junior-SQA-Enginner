@@ -57,11 +57,27 @@
             padding: 1.2rem 0;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
+       .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0066cc; /* Customize color */
+}
+
+.logo-img {
+    width: 50px; /* Adjust the image size */
+    height: 50px;
+    margin-right: 10px; /* Space between image and text */
+    border-radius: 50%; /* Optional: for circular image */
+}
+
+.logo-text {
+    font-size: 32px;
+    font-weight: bold;
+}
+
 
         .nav-links {
             display: flex;
@@ -529,10 +545,10 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <ul class="nav-links">
-                        <li><a href="#home">YHF</a></li>
-                    </ul>
+                    <img src="image/YHF LOGO.png" alt="Logo Image" class="logo-img">
+                    <span class="logo-text">YHF</span>
                 </div>
+
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
